@@ -1,9 +1,0 @@
-DB : "mongodb"
-User: Easton William
-Friends:William
-Go
-
-## Description
-This is project for Beginners--
-
-EastonWilliam
