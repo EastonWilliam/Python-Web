@@ -1,6 +1,6 @@
 // Regex: matches ANY non-Latin script characters
 const NON_LATIN_REGEX = /[^\u0000-\u007F\u00A0-\u024F\s.,!?'"()\-:;0-9]/g;
-
+//
 // Check if a string contains non-Latin characters
 function hasNonLatin(text) {
   return NON_LATIN_REGEX.test(text);
@@ -21,7 +21,7 @@ function scanDOM(root = document.body) {
     root,
     NodeFilter.SHOW_TEXT,
     null,
-    false
+    false,
   );
 
   let node;
@@ -34,7 +34,7 @@ function scanDOM(root = document.body) {
 function removeBadElements() {
   const allElements = document.querySelectorAll("body *");
 
-  allElements.forEach(el => {
+  allElements.forEach((el) => {
     if (el.children.length === 0) {
       const text = el.textContent?.trim();
 
@@ -61,5 +61,5 @@ const observer = new MutationObserver(() => {
 
 observer.observe(document.body, {
   childList: true,
-  subtree: true
+  subtree: true,
 });
