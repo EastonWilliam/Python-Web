@@ -1,6 +1,6 @@
 // Regex: matches ANY non-Latin script characters
 const NON_LATIN_REGEX = /[^\u0000-\u007F\u00A0-\u024F\s.,!?'"()\-:;0-9]/g;
-//
+// Updated regex to allow basic punctuation and numbers, while still blocking non-Latin scripts
 // Check if a string contains non-Latin characters
 function hasNonLatin(text) {
   return NON_LATIN_REGEX.test(text);
