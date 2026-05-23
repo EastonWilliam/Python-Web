@@ -38,3 +38,15 @@ public class Settings
         EnableLogging = true;
     }
 }
+
+class Students{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Grade { get; set; }
+    public Students(string name, int age, string grade)
+    {
+        Name = name;
+        Age = age;
+        Grade = grade;
+    }
+}
