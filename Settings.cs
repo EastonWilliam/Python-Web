@@ -50,3 +50,6 @@ class Students{
         Grade = grade;
     }
 }
+class Teacher {
+    
+}
