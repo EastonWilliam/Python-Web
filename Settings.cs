@@ -50,6 +50,12 @@ class Students{
         Grade = grade;
     }
 }
-class Teacher {
-    
+class Teacher { 
+    public string Name { get; set; }
+    public string Subject { get; set; }
+    public Teacher(string name, string subject)
+    {
+        Name = name;
+        Subject = subject;
+    }
 }
