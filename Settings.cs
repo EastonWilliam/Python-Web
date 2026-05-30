@@ -59,3 +59,19 @@ class Teacher {
         Subject = subject;
     }
 }
+class Course
+{
+    public string CourseName { get; set; }
+    public Teacher CourseTeacher { get; set; }
+    public List<Students> EnrolledStudents { get; set; }
+    public Course(string courseName, Teacher courseTeacher)
+    {
+        CourseName = courseName;
+        CourseTeacher = courseTeacher;
+        EnrolledStudents = new List<Students>();
+    }
+    public void EnrollStudent(Students student)
+    {
+        EnrolledStudents.Add(student);
+    }
+}
