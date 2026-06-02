@@ -14,3 +14,13 @@ Namespace MyApp
         }
     }
 }
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Settings appSettings = new Settings();
+        Console.WriteLine("Database Connection String: " + appSettings.DatabaseConnectionString);
+        Console.WriteLine("Max Items to Display: " + appSettings.MaxItemsToDisplay);
+        Console.WriteLine("Enable Logging: " + appSettings.EnableLogging);
+    }
+}
