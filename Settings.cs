@@ -75,4 +75,18 @@ class Course
         EnrolledStudents.Add(student);
     }
 }
+
+class Class {
+    public string ClassName { get; set; }
+    public List<Course> Courses { get; set; }
+    public Class(string className)
+    {
+        ClassName = className;
+        Courses = new List<Course>();
+    }
+    public void AddCourse(Course course)
+    {
+        Courses.Add(course);
+    }
+}
 // END
